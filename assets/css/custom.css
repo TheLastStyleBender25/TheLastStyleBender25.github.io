@@ -148,3 +148,6 @@ section {
 .hero {
     background-size: 120%;
 }
+.hero::after {
+    background: rgba(255,0,0,0.2);
+}
