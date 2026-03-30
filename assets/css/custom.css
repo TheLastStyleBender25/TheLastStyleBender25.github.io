@@ -50,7 +50,7 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(5,5,15,0.6);
+ background: rgba(5,5,15,0.35); /* lighter */
 }
 
 /* CONTENT */
