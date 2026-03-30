@@ -1,5 +1,5 @@
 /* ========================= */
-/* 🎮 GAME PORTFOLIO STYLE  */
+/* 🎮 GAME PORTFOLIO FINAL  */
 /* ========================= */
 
 body {
@@ -9,7 +9,7 @@ body {
     background: #0b0b1a;
 }
 
-/* NAVBAR */
+/* ===== NAVBAR ===== */
 nav {
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ nav a:hover {
     color: #8a7cff;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
 .hero {
     height: 100vh;
     background: url("/images/bg.png") center/cover no-repeat;
@@ -42,16 +42,18 @@ nav a:hover {
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden; /* important */
+    overflow: hidden;
 }
 
+/* DARK OVERLAY */
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(5,5,15,0.75);
+    background: rgba(5,5,15,0.6);
 }
 
+/* CONTENT */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -59,7 +61,7 @@ nav a:hover {
 
 .hero h1 {
     font-size: 4rem;
-    text-shadow: 0 0 30px rgba(0,0,0,0.8);
+    text-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
 
 .hero p {
@@ -84,13 +86,14 @@ nav a:hover {
     box-shadow: 0 0 20px rgba(138,124,255,0.7);
 }
 
-/* SECTION */
+/* ===== SECTIONS ===== */
 section {
     padding: 80px 20px;
     text-align: center;
+    background: #0b0b1a;
 }
 
-/* SKILLS */
+/* ===== SKILLS ===== */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -115,19 +118,20 @@ section {
     margin-bottom: 10px;
 }
 
-/* CONTACT */
+/* ===== CONTACT ===== */
 .contact a {
     display: block;
     margin: 10px;
     color: #aaa;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .contact a:hover {
     color: white;
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -138,30 +142,8 @@ section {
     }
 }
 
-/* ===== GLOBAL BACKGROUND ===== */
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
-
-    background: linear-gradient(
-        rgba(5, 5, 15, 0.9),
-        rgba(5, 5, 15, 0.95)
-    ),
-    url("/images/bg.png");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* 🔥 gives depth */
-}
-
-/* REMOVE hero bg (important) */
+/* ===== MOUSE PARALLAX SUPPORT ===== */
+/* Slight zoom helps movement visibility */
 .hero {
-    background: transparent !important;
-}
-
-section {
-    background: rgba(10, 10, 30, 0.6);
-    backdrop-filter: blur(4px);
+    background-size: 120%;
 }
