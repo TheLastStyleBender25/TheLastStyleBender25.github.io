@@ -259,25 +259,57 @@ section {
     margin: 10px 0;
 }
 
-.personal-card p {
-    font-size: 0.9rem;
-    color: #ccc;
+/* ===== PERSONAL PROJECT TILES ===== */
+
+#personal-projects {
+    padding: 80px 20px;
+    text-align: center;
 }
 
-/* DOWNLOAD BUTTON */
-.btn-download {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 20px;
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-    border-radius: 20px;
+.project-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* 🔥 horizontal scroll */
+    padding: 20px;
+}
+
+/* TILE */
+.project-tile {
+    min-width: 220px;
+    height: 140px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     text-decoration: none;
+    flex-shrink: 0;
     transition: 0.3s;
 }
 
-.btn-download:hover {
-    background: #00ffcc;
-    color: black;
-    box-shadow: 0 0 15px #00ffcc;
+/* DARK OVERLAY */
+.project-tile .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+/* TITLE */
+.project-tile h3 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* HOVER EFFECT */
+.project-tile:hover {
+    transform: scale(1.08);
+}
+
+.project-tile:hover .overlay {
+    background: rgba(0,0,0,0.2);
 }
