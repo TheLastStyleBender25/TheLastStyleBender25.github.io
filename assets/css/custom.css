@@ -36,7 +36,7 @@ nav a:hover {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url("/images/bg.jpg") center/cover no-repeat;
+    background: url("/images/bg.png") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,4 +136,32 @@ section {
     .skill {
         width: 90%;
     }
+}
+
+/* ===== GLOBAL BACKGROUND ===== */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+
+    background: linear-gradient(
+        rgba(5, 5, 15, 0.9),
+        rgba(5, 5, 15, 0.95)
+    ),
+    url("/images/bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 🔥 gives depth */
+}
+
+/* REMOVE hero bg (important) */
+.hero {
+    background: transparent !important;
+}
+
+section {
+    background: rgba(10, 10, 30, 0.6);
+    backdrop-filter: blur(4px);
 }
