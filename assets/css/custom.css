@@ -354,3 +354,17 @@ section {
     background: rgba(0,0,0,0.8);
     transform: translateY(-50%) scale(1.1);
 }
+
+.contact a {
+    display: block;
+    margin: 12px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: white;
+    transform: scale(1.05);
+}
