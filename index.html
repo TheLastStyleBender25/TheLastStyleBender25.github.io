@@ -165,17 +165,20 @@
 
 </body>
 </html>
+
 <script>
-const hero = document.querySelector(".hero");
+document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
 
-document.addEventListener("mousemove", (e) => {
-    let x = e.clientX / window.innerWidth;
-    let y = e.clientY / window.innerHeight;
+    document.addEventListener("mousemove", (e) => {
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;
 
-    let moveX = (x - 0.5) * 20; // horizontal movement
-    let moveY = (y - 0.5) * 20; // vertical movement
+        let moveX = (x - 0.5) * 20;
+        let moveY = (y - 0.5) * 20;
 
-    hero.style.backgroundPosition = 
-        `${50 + moveX}% ${50 + moveY}%`;
+        hero.style.backgroundPosition = 
+            `${50 + moveX}% ${50 + moveY}%`;
+    });
 });
 </script>
