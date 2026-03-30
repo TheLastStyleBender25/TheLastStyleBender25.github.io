@@ -37,6 +37,7 @@ nav a:hover {
 .hero {
     height: 100vh;
     background: url("/images/bg.png") center/cover no-repeat;
+    background-size: 120%; /* 🔥 important */
     display: flex;
     justify-content: center;
     align-items: center;
