@@ -1,31 +1,39 @@
 /* ========================= */
-/* 🎮 GAME PORTFOLIO FINAL  */
+/* 🎮 CLEAN GAME PORTFOLIO  */
 /* ========================= */
 
+/* GLOBAL BACKGROUND (ALL PAGES) */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     color: white;
-    background: #0b0b1a;
+
+    background: linear-gradient(
+        rgba(5,5,15,0.7),
+        rgba(5,5,15,0.9)
+    ),
+    url("/images/bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.7);
     padding: 12px;
     text-align: center;
     z-index: 100;
-    backdrop-filter: blur(6px);
 }
 
 nav a {
     color: white;
     margin: 0 20px;
     text-decoration: none;
-    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -33,39 +41,22 @@ nav a:hover {
     color: #8a7cff;
 }
 
-/* ===== HERO SECTION ===== */
+/* HERO */
 .hero {
     height: 100vh;
-    background: url("/images/bg.png") center/cover no-repeat;
-    background-size: 120%; /* 🔥 important */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
-/* DARK OVERLAY */
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
- background: rgba(5,5,15,0.35); /* lighter */
-}
-
-/* CONTENT */
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1 {
+.hero-content h1 {
     font-size: 4rem;
     text-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
 
-.hero p {
+.hero-content p {
     font-size: 1.3rem;
     color: #ccc;
 }
@@ -77,24 +68,21 @@ nav a:hover {
     border: 1px solid #8a7cff;
     text-decoration: none;
     color: white;
-    display: inline-block;
     border-radius: 30px;
     transition: 0.3s;
 }
 
 .btn:hover {
     background: #8a7cff;
-    box-shadow: 0 0 20px rgba(138,124,255,0.7);
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section {
     padding: 80px 20px;
     text-align: center;
-    background: #0b0b1a;
 }
 
-/* ===== SKILLS ===== */
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -104,50 +92,18 @@ section {
 .skill {
     margin: 20px;
     padding: 25px;
-    background: #151530;
+    background: rgba(20,20,40,0.8);
     border-radius: 12px;
     width: 260px;
-    transition: 0.3s;
 }
 
-.skill:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(138,124,255,0.4);
-}
-
-.skill h3 {
-    margin-bottom: 10px;
-}
-
-/* ===== CONTACT ===== */
+/* CONTACT */
 .contact a {
     display: block;
     margin: 10px;
     color: #aaa;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
 .contact a:hover {
     color: white;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .skill {
-        width: 90%;
-    }
-}
-
-/* ===== MOUSE PARALLAX SUPPORT ===== */
-/* Slight zoom helps movement visibility */
-.hero {
-    background-size: 120%;
-}
-.hero::after {
-    background: rgba(255,0,0,0.2);
 }
