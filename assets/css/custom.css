@@ -335,3 +335,31 @@ section {
         width: 90%;
     }
 }
+
+/* ========================= */
+/* 🔥 SECTION HEADINGS FIX   */
+/* ========================= */
+
+section h2 {
+    font-size: 3rem;                 /* 🔥 bigger */
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+
+    /* gradient text (game style) */
+    background: linear-gradient(90deg, #ffffff, #8a7cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* glow effect */
+    text-shadow: 0 0 20px rgba(138,124,255,0.4);
+
+    letter-spacing: 1px;
+}
+
+/* 📱 responsive */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2rem;
+    }
+}
