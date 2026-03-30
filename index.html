@@ -1,183 +1,184 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="assets/css/custom.css">
     <title>Shrey Kumar | Unity Developer</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            color: white;
+            background: #0b0b1a;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url("images/bg.jpg") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(5,5,15,0.75);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: 1px solid white;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            margin: 20px;
+            padding: 20px;
+            background: #151530;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        /* CONTACT */
+        .contact a {
+            display: block;
+            margin: 10px;
+            color: #aaa;
+        }
+
+    </style>
 </head>
 
-<body class="is-preload">
+<body>
 
-<!-- Sidebar -->
-<section id="sidebar">
-    <div class="inner">
-        <nav>
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</section>
-
-<div id="wrapper">
+<nav>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <!-- HERO -->
-<section id="intro" class="wrapper style1 fullscreen fade-up">
-    <div class="inner">
+<section id="home" class="hero">
+    <div class="hero-content">
         <h1>Shrey Kumar</h1>
-        <p>Unity Game Developer | PC, Mobile & VR Games</p>
-        <ul class="actions">
-            <li><a href="#projects" class="button scrolly">View My Work</a></li>
-        </ul>
+        <p>Unity Game Developer | PC, Mobile & VR</p>
+        <a href="#skills" class="btn">Explore</a>
     </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="wrapper style2 spotlights">
-
-    <!-- PROJECT 1 -->
-    <section>
-        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>Top-Down Shooter</h2>
-                <p>
-                Fast-paced shooting game featuring dynamic combat,
-                enemy AI, and smooth controls with increasing difficulty.
-                </p>
-                <ul class="actions">
-                    <li><a href="#" class="button">Download APK</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECT 2 -->
-    <section>
-        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>Coco’s Adventure (PC 3D Game)</h2>
-                <p>
-                A 3D action-adventure game built using Unity URP with gamepad support,
-                advanced enemy systems, and immersive environments.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECT 3 -->
-    <section>
-        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>VR Sports Mall (Oculus Quest 2)</h2>
-                <p>
-                A VR experience featuring Cricket, Basketball, and Baseball with
-                interactive environments and immersive gameplay.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECT 4 -->
-    <section>
-        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>Slot Games (Aristocrat Gaming)</h2>
-                <p>
-                Worked on multiple production slot games including SuperBall Day,
-                Savannah Royalty, and Ocean Loot for real-world platforms.
-                </p>
-            </div>
-        </div>
-    </section>
-
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="wrapper style3 fade-up">
-    <div class="inner">
-        <h2>Skills</h2>
+<section id="skills">
+    <h2>Skills</h2>
 
-        <div class="features">
+    <div class="skills">
 
-            <section>
-                <span class="icon solid major fa-gamepad"></span>
-                <h3>Game Development</h3>
-                <p>Unity 2D/3D, URP, HDRP, PC, Mobile & VR</p>
-            </section>
-
-            <section>
-                <span class="icon solid major fa-code"></span>
-                <h3>Programming</h3>
-                <p>C#, OOP, Data Structures, Clean Architecture</p>
-            </section>
-
-            <section>
-                <span class="icon solid major fa-robot"></span>
-                <h3>Gameplay Systems</h3>
-                <p>Enemy AI, NavMesh Agents, Combat Systems</p>
-            </section>
-
-            <section>
-                <span class="icon solid major fa-magic"></span>
-                <h3>Graphics & VFX</h3>
-                <p>Particle Systems, Shaders (Basics), Lighting</p>
-            </section>
-
-            <section>
-                <span class="icon solid major fa-network-wired"></span>
-                <h3>Multiplayer & Backend</h3>
-                <p>Netcode, APIs, JSON, Backend Integration</p>
-            </section>
-
-            <section>
-                <span class="icon solid major fa-bolt"></span>
-                <h3>Optimization</h3>
-                <p>Performance tuning, memory optimization</p>
-            </section>
-
+        <div class="skill">
+            <h3>Unity Development</h3>
+            <p>2D/3D, URP, PC, Mobile, VR</p>
         </div>
+
+        <div class="skill">
+            <h3>C# Programming</h3>
+            <p>OOP, clean architecture</p>
+        </div>
+
+        <div class="skill">
+            <h3>Gameplay Systems</h3>
+            <p>AI, NavMesh, combat systems</p>
+        </div>
+
+        <div class="skill">
+            <h3>VFX & Graphics</h3>
+            <p>Particles, shaders basics</p>
+        </div>
+
+        <div class="skill">
+            <h3>Multiplayer</h3>
+            <p>Netcode, backend basics</p>
+        </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="wrapper style1 fade-up">
-    <div class="inner">
-        <h2>Contact</h2>
-        <p>Open to opportunities and collaborations.</p>
+<section id="contact">
+    <h2>Contact</h2>
 
-        <ul class="contact">
-            <li><h3>Email</h3><a href="#">sherykumar25@gmail.com</a></li>
-            <li><h3>Phone</h3><span>8936958930</span></li>
-            <li><h3>GitHub</h3><a href="#">github.com/TheLastStyleBender25</a></li>
-        </ul>
+    <div class="contact">
+        <a href="mailto:sherykumar25@gmail.com">sherykumar25@gmail.com</a>
+        <a href="#">GitHub: TheLastStyleBender25</a>
+        <a href="#">LinkedIn: Add your link</a>
     </div>
 </section>
 
-</div>
-
-<footer id="footer" class="wrapper style1-alt">
-    <div class="inner">
-        <ul class="menu">
-            <li>&copy; Shrey Kumar</li>
-        </ul>
-    </div>
-</footer>
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
 </body>
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero");
+
+    document.addEventListener("mousemove", (e) => {
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;
+
+        let moveX = (x - 0.5) * 20;
+        let moveY = (y - 0.5) * 20;
+
+        hero.style.backgroundPosition = 
+            `${50 + moveX}% ${50 + moveY}%`;
+    });
+});
+</script>

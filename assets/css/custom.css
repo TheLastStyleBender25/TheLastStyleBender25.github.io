@@ -1,0 +1,139 @@
+/* ========================= */
+/* 🎮 GAME PORTFOLIO STYLE  */
+/* ========================= */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: #0b0b1a;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 12px;
+    text-align: center;
+    z-index: 100;
+    backdrop-filter: blur(6px);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8a7cff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("/images/bg.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* important */
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(5,5,15,0.75);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 1px solid #8a7cff;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8a7cff;
+    box-shadow: 0 0 20px rgba(138,124,255,0.7);
+}
+
+/* SECTION */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
+    padding: 25px;
+    background: #151530;
+    border-radius: 12px;
+    width: 260px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(138,124,255,0.4);
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact a {
+    display: block;
+    margin: 10px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
