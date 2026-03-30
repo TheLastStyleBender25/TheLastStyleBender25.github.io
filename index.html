@@ -18,10 +18,7 @@
 <section id="home" class="hero">
     <div class="hero-content">
         <h1>Shrey Kumar</h1>
-<p>
-Unity Game Developer with 4+ years of experience developing mobile, PC, and VR games. 
-Experienced in building gameplay systems, enemy AI, NavMesh-based movement, and VFX, with a strong focus on performance and smooth player experience.
-</p>
+        <p id="typing-text"></p>
         <a href="#skills" class="btn">Explore</a>
     </div>
 </section>
@@ -38,7 +35,7 @@ Experienced in building gameplay systems, enemy AI, NavMesh-based movement, and 
 
         <div class="skill">
             <h3>C# Programming</h3>
-            <p>OOP, clean architecture</p>
+            <p>OOP, scalable architecture</p>
         </div>
 
         <div class="skill">
@@ -70,19 +67,32 @@ Experienced in building gameplay systems, enemy AI, NavMesh-based movement, and 
 </section>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const hero = document.querySelector(".hero");
+/* ===== Typing Animation ===== */
+const text = "Unity Game Developer with 2+ years of experience building mobile, PC, and VR games. Skilled in AI, gameplay systems, VFX, and performance optimization.";
+let index = 0;
 
-    document.addEventListener("mousemove", (e) => {
-        let x = e.clientX / window.innerWidth;
-        let y = e.clientY / window.innerHeight;
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 25);
+    }
+}
 
-        let moveX = (x - 0.5) * 40;
-        let moveY = (y - 0.5) * 40;
+typeEffect();
 
-        hero.style.backgroundPosition =
-            `${50 + moveX}% ${50 + moveY}%`;
-    });
+/* ===== Mouse Parallax ===== */
+const hero = document.querySelector(".hero");
+
+document.addEventListener("mousemove", (e) => {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+
+    let moveX = (x - 0.5) * 40;
+    let moveY = (y - 0.5) * 40;
+
+    hero.style.backgroundPosition =
+        `${50 + moveX}% ${50 + moveY}%`;
 });
 </script>
 
