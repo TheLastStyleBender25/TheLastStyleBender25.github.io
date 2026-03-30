@@ -389,3 +389,35 @@ section {
     background: rgba(5,5,15,0.6);
     z-index: -1;
 }
+
+/* ===== SECOND VIDEO BACKGROUND ===== */
+
+.section-video-bg {
+    position: relative;
+}
+
+/* VIDEO */
+.bg-video-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* OVERLAY */
+.video-overlay-2 {
+    position: absolute;
+    inset: 0;
+    background: rgba(5,5,15,0.7);
+    z-index: -1;
+}
+
+/* ENSURE CONTENT ABOVE VIDEO */
+.section-video-bg section {
+    position: relative;
+    z-index: 1;
+}
