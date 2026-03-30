@@ -259,57 +259,66 @@ section {
     margin: 10px 0;
 }
 
-/* ===== PERSONAL PROJECT TILES ===== */
+/* ===== PERSONAL PROJECT TILES (UPGRADED) ===== */
 
 #personal-projects {
     padding: 80px 20px;
     text-align: center;
 }
 
+/* HIDE SCROLLBAR */
 .project-row {
     display: flex;
-    gap: 20px;
-    overflow-x: auto; /* 🔥 horizontal scroll */
-    padding: 20px;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 30px 40px;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none; /* Firefox */
+}
+
+.project-row::-webkit-scrollbar {
+    display: none; /* Chrome */
 }
 
 /* TILE */
 .project-tile {
-    min-width: 220px;
-    height: 140px;
-    border-radius: 12px;
+    min-width: 240px;
+    height: 150px;
+    border-radius: 16px;
     background-size: cover;
     background-position: center;
     position: relative;
-    text-decoration: none;
     flex-shrink: 0;
-    transition: 0.3s;
+    text-decoration: none;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* DARK OVERLAY */
 .project-tile .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.5);
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.3)
+    );
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
-    transition: 0.3s;
+    border-radius: 16px;
 }
 
 /* TITLE */
 .project-tile h3 {
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
-/* HOVER EFFECT */
+/* 🔥 HOVER EFFECT (GAME STYLE) */
 .project-tile:hover {
-    transform: scale(1.08);
-}
-
-.project-tile:hover .overlay {
-    background: rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(138,124,255,0.6);
+    z-index: 2;
 }
