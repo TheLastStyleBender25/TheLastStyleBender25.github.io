@@ -8,6 +8,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
     <a href="#home">Home</a>
     <a href="#projects">Projects</a>
@@ -15,17 +16,15 @@
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO -->
 <section id="home" class="hero">
 
-    <!-- 🎥 BACKGROUND VIDEO -->
     <video autoplay muted loop playsinline class="bg-video">
         <source src="images/bg-video.mp4" type="video/mp4">
     </video>
 
-    <!-- DARK OVERLAY -->
     <div class="video-overlay"></div>
 
-    <!-- CONTENT -->
     <div class="hero-content">
         <h1>Shrey Kumar</h1>
         <p id="typing-text"></p>
@@ -33,47 +32,36 @@
 
 </section>
 
-    <section id="projects">
+<!-- PROJECTS -->
+<section id="projects">
     <h2>Projects</h2>
 
+    <!-- PROJECT 1 -->
     <div class="project">
-
         <div class="project-media">
             <video autoplay muted loop playsinline>
                 <source src="images/magic-mirror.mp4" type="video/mp4">
             </video>
         </div>
 
-            <!-- PROJECT 1 -->
         <div class="project-content">
             <h3>Magic Mirror</h3>
 
-            <p>
-                An interactive Unity-based application utilizing BlazePoseBarracuda for real-time human pose detection. 
-                The system analyzes user movements and dynamically responds by predicting outcomes based on observed behavior.
-            </p>
+            <div class="typing" data-text="
+An interactive Unity-based application utilizing BlazePoseBarracuda for real-time human pose detection. The system analyzes user movements and dynamically responds by predicting outcomes based on observed behavior.
 
-            <p>
-                This project demonstrates advanced integration of machine learning with gameplay systems, enabling 
-                immersive, responsive interactions and real-time motion analysis.
-            </p>
+This project demonstrates advanced integration of machine learning with gameplay systems, enabling immersive, responsive interactions and real-time motion analysis.
 
-            <ul>
-                <li>Real-time pose detection (BlazePoseBarracuda)</li>
-                <li>Behavior-based prediction system</li>
-                <li>Interactive and immersive experience</li>
-                <li>Unity + ML integration</li>
-            </ul>
-
+• Real-time pose detection (BlazePoseBarracuda)
+• Behavior-based prediction system
+• Interactive and immersive experience
+• Unity + ML integration
+"></div>
         </div>
-
     </div>
 
-
-            <!-- 👉 ADD PROJECT 2 HERE (RIGHT BELOW PROJECT 1) -->
-
+    <!-- PROJECT 2 -->
     <div class="project">
-
         <div class="project-media">
             <video autoplay muted loop playsinline>
                 <source src="images/coco-adventure.mp4" type="video/mp4">
@@ -83,260 +71,131 @@
         <div class="project-content">
             <h3>Coco's Adventure</h3>
 
-            <p>
-                A PC-based 3D action-adventure game developed in Unity using the Universal Render Pipeline (URP), 
-                delivering high-quality visuals and immersive environments.
-            </p>
+            <div class="typing" data-text="
+A PC-based 3D action-adventure game developed in Unity using the Universal Render Pipeline (URP), delivering high-quality visuals and immersive environments.
 
-            <p>
-                Designed for gamepad gameplay using Unity’s new Input System, the project focuses on smooth controls, 
-                responsive mechanics, and engaging level design.
-            </p>
+Designed for gamepad gameplay using Unity’s new Input System, the project focuses on smooth controls, responsive mechanics, and engaging level design.
 
-            <ul>
-                <li>Unity URP for enhanced graphics</li>
-                <li>Gamepad support (New Input System)</li>
-                <li>3D environment & level design</li>
-                <li>Smooth player movement & controls</li>
-            </ul>
+• Unity URP for enhanced graphics
+• Gamepad support (New Input System)
+• 3D environment & level design
+• Smooth player movement & controls
+"></div>
+        </div>
+    </div>
 
+    <!-- PROJECT 3 -->
+    <div class="project">
+        <div class="project-media">
+            <video autoplay muted loop playsinline>
+                <source src="images/jungle-combat.mp4" type="video/mp4">
+            </video>
         </div>
 
+        <div class="project-content">
+            <h3>Jungle Combat</h3>
+
+            <div class="typing" data-text="
+A PC-based 3D adventure game built using Unity’s Universal Render Pipeline (URP), featuring visually rich environments and dynamic combat scenarios.
+
+The project focuses on advanced gameplay systems, including a sophisticated enemy AI system and enhanced visual effects (VFX) to create intense and immersive combat experiences.
+
+• Advanced enemy AI system
+• VFX-driven combat experience
+• Unity URP for high-quality visuals
+• Gamepad support (New Input System)
+"></div>
+        </div>
     </div>
 
-      <!-- 👉 ADD PROJECT 3 HERE -->
-        <div class="project">
+    <!-- PROJECT 4 -->
+    <div class="project">
+        <div class="project-media">
+            <video autoplay muted loop playsinline>
+                <source src="images/vr-sports-mall.mp4" type="video/mp4">
+            </video>
+        </div>
 
-    <div class="project-media">
-        <video autoplay muted loop playsinline>
-            <source src="images/jungle-combat.mp4" type="video/mp4">
-        </video>
+        <div class="project-content">
+            <h3>VR Sports Mall</h3>
+
+            <div class="typing" data-text="
+A virtual reality experience developed for Oculus Quest 2, featuring multiple interactive environments including Cricket, Basketball, and Baseball.
+
+The project also includes a virtual jewelry showroom, allowing users to explore and interact with products in a fully immersive 3D space.
+
+• Developed for Oculus Quest 2 (VR)
+• Multiple interactive sports environments
+• Immersive VR UI/UX design
+• Interactive virtual showroom experience
+"></div>
+        </div>
     </div>
 
-    <div class="project-content">
-        <h3>Jungle Combat</h3>
+    <!-- SLOT PROJECT -->
+    <div class="project">
+        <div class="project-media">
+            <video id="slot-video" autoplay muted playsinline></video>
+        </div>
 
-        <p>
-            A PC-based 3D adventure game built using Unity’s Universal Render Pipeline (URP), 
-            featuring visually rich environments and dynamic combat scenarios.
-        </p>
+        <div class="project-content">
+            <h3>Slot Games Collection</h3>
 
-        <p>
-            The project focuses on advanced gameplay systems, including a sophisticated enemy AI system 
-            and enhanced visual effects (VFX) to create intense and immersive combat experiences.
-        </p>
+            <div class="typing" data-text="
+Worked on multiple in-house slot games for BFC, IPS, and NFL, focusing on performance optimization, payout logic, and core gameplay mechanics.
 
-        <ul>
-            <li>Advanced enemy AI system</li>
-            <li>VFX-driven combat experience</li>
-            <li>Unity URP for high-quality visuals</li>
-            <li>Gamepad support (New Input System)</li>
-        </ul>
+• Performance optimization
+• Slot math & payout systems
+• Core slot gameplay mechanics
 
+Games:
+SuperBall Day • Savannah Royalty • Mad Mouse Ultra • Ocean Loot • Serengeti Splendor • Galaxy Wilds
+"></div>
+        </div>
     </div>
 
-</div>
-
-         <!-- 👉 ADD PROJECT 4 HERE -->
-        <div class="project">
-
-    <div class="project-media">
-        <video autoplay muted loop playsinline>
-            <source src="images/vr-sports-mall.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <div class="project-content">
-        <h3>VR Sports Mall</h3>
-
-        <p>
-            A virtual reality experience developed for Oculus Quest 2, featuring multiple interactive environments 
-            including Cricket, Basketball, and Baseball.
-        </p>
-
-        <p>
-            The project also includes a virtual jewelry showroom, allowing users to explore and interact with products 
-            in a fully immersive 3D space, demonstrating real-world VR application design.
-        </p>
-
-        <ul>
-            <li>Developed for Oculus Quest 2 (VR)</li>
-            <li>Multiple interactive sports environments</li>
-            <li>Immersive VR UI/UX design</li>
-            <li>Interactive virtual showroom experience</li>
-        </ul>
-
-    </div>
-
-</div>
-
-<!-- 👉 ARISTOCRAT PROJECTS HERE -->
-        <div class="project">
-
-    <div class="project-media">
-        <video id="slot-video" autoplay muted playsinline></video>
-    </div>
-
-    <div class="project-content">
-        <h3>Slot Games Collection</h3>
-
-        <p>
-            Contributed to multiple in-house slot games for BFC, IPS, and NFL, focusing on performance optimization, 
-            payout logic, and core gameplay mechanics.
-        </p>
-
-        <p>
-            Worked extensively on slot math systems, ensuring balanced RTP and engaging gameplay while maintaining 
-            high performance across platforms.
-        </p>
-
-        <ul>
-            <li>Performance optimization for real-time gameplay</li>
-            <li>Slot math & payout system validation</li>
-            <li>Core slot mechanics development</li>
-            <li>Multiple production-ready titles</li>
-        </ul>
-
-        <p><strong>Games:</strong></p>
-        <p>
-            SuperBall Day • Savannah Royalty • Mad Mouse Ultra • Ocean Loot • Serengeti Splendor • Galaxy Wilds
-        </p>
-
-    </div>
-
-</div>
 </section>
 
-    <!-- 👉 PERSONAL PROJECTS HERE -->
+<!-- PERSONAL PROJECTS -->
 <section id="personal-projects">
     <h2>Personal Projects</h2>
 
     <div class="slider-container">
-
         <button class="scroll-btn left">&#10094;</button>
 
         <div class="project-row" id="slider">
 
-        <!-- PROJECT 1 -->
-        <a href="https://drive.google.com/file/d/18RqJoDnQ9wNu2h15p_NG_IUEpYB6K8E5/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Tic Tac Toe</h3>
-            </div>
-        </a>
+            <a href="https://drive.google.com/file/d/18RqJoDnQ9wNu2h15p_NG_IUEpYB6K8E5/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');"><div class="overlay"><h3>Tic Tac Toe</h3></div></a>
 
-        <!-- PROJECT 2 -->
-        <a href="https://drive.google.com/file/d/18coGAk204dZMeInnUudesKGwiO9-hjc3/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Twist</h3>
-            </div>
-        </a>
+            <a href="https://drive.google.com/file/d/18coGAk204dZMeInnUudesKGwiO9-hjc3/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');"><div class="overlay"><h3>Twist</h3></div></a>
 
-        <!-- PROJECT 3 -->
-        <a href="https://drive.google.com/file/d/18ctRAkRXbLZEbiyrkGx6yMjWZIp8A8gV/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>IDZ</h3>
-            </div>
-        </a>
+            <a href="https://drive.google.com/file/d/18ctRAkRXbLZEbiyrkGx6yMjWZIp8A8gV/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');"><div class="overlay"><h3>IDZ</h3></div></a>
 
-        <!-- PROJECT 4 -->
-        <a href="https://drive.google.com/file/d/18W3djlfgJRqKQ1YrYTnVbB_Z3w96jTei/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Candy Crush</h3>
-            </div>
-        </a>
-
-                <!-- PROJECT 5 -->
-        <a href="https://drive.google.com/file/d/18pyxCZoRUbf0NzKzzpmCCd6YYzDFSHlx/view" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Crossy Roads</h3>
-            </div>
-        </a>
-
-                        <!-- PROJECT 6 -->
-        <a href="https://drive.google.com/file/d/169JhMp5x9z-rlc9BkK9dUSnWs8EB-oF9/view?usp=sharing" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Catch Up</h3>
-            </div>
-        </a>
-
-                        <!-- PROJECT 7 -->
-        <a href="https://drive.google.com/file/d/12_WYdcbQDFcv8Qvd_3uT47LUi7QwSVTx/view?usp=sharing" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>Go</h3>
-            </div>
-        </a>
-
-                    <!-- PROJECT 8 -->
-        <a href="https://drive.google.com/file/d/1osReAmgcuS6a1XSaxy2wLevoy7KsaixU/view?usp=sharing" target="_blank" class="project-tile" style="background-image: url('images/project.png');">
-            <div class="overlay">
-                <h3>ARc Survives</h3>
-            </div>
-        </a>
+            <a href="https://drive.google.com/file/d/18W3djlfgJRqKQ1YrYTnVbB_Z3w96jTei/view" target="_blank" class="project-tile"><div class="overlay"><h3>Candy Crush</h3></div></a>
 
         </div>
 
         <button class="scroll-btn right">&#10095;</button>
-
     </div>
 </section>
 
-    <!-- 🎥 VIDEO BACKGROUND SECTION -->
+<!-- SKILLS + CONTACT -->
 <div class="section-video-bg">
 
-    <video autoplay muted loop playsinline class="bg-video-2">
-        <source src="images/bg2.mp4" type="video/mp4">
-    </video>
+<video autoplay muted loop playsinline class="bg-video-2">
+    <source src="images/bg2.mp4" type="video/mp4">
+</video>
 
-    <div class="video-overlay-2"></div>
+<div class="video-overlay-2"></div>
 
 <section id="skills">
     <h2>Skills</h2>
 
     <div class="skills">
-
-        <!-- EXISTING -->
-        <div class="skill">
-            <h3>Unity Development</h3>
-            <p>2D/3D, PC, Mobile, VR, URP, HDRP</p>
-        </div>
-
-        <div class="skill">
-            <h3>C# Programming</h3>
-            <p>OOP, Data Structures, Algorithms</p>
-        </div>
-
-        <div class="skill">
-            <h3>Gameplay Systems</h3>
-            <p>AI, NavMesh, State Machines, Inventory</p>
-        </div>
-
-        <div class="skill">
-            <h3>VFX & Graphics</h3>
-            <p>Particles, Shaders, Lighting, Post-Processing</p>
-        </div>
-
-        <!-- NEW ADDED -->
-
-        <div class="skill">
-            <h3>Game Engines & Tools</h3>
-            <p>Unity 3D & 2D, Quest 2 VR, AR, Visual Studio, Git</p>
-        </div>
-
-        <div class="skill">
-            <h3>Multiplayer & Ads</h3>
-            <p>Netcode Multiplayer, Google Ads Integration</p>
-        </div>
-
-        <div class="skill">
-            <h3>Performance Optimization</h3>
-            <p>Profiling, Optimization, Memory Management</p>
-        </div>
-
-        <div class="skill">
-            <h3>Platforms</h3>
-            <p>PC Games, VR/AR Applications, Mobile, Slot/Casino Games</p>
-        </div>
-
+        <div class="skill"><h3>Unity Development</h3><p>2D/3D, PC, Mobile, VR, URP, HDRP</p></div>
+        <div class="skill"><h3>C# Programming</h3><p>OOP, Data Structures, Algorithms</p></div>
+        <div class="skill"><h3>Gameplay Systems</h3><p>AI, NavMesh, State Machines, Inventory</p></div>
+        <div class="skill"><h3>VFX & Graphics</h3><p>Particles, Shaders</p></div>
     </div>
 </section>
 
@@ -344,48 +203,53 @@
     <h2>Contact</h2>
 
     <div class="contact">
-        <a href="mailto:sherykumar25@gmail.com">
-            📧 sherykumar25@gmail.com
-        </a>
-
-        <a href="tel:+91XXXXXXXXXX">
-            📱 +91 8936958930
-        </a>
-
-        <a href="https://www.linkedin.com/in/shrey-kumar-68437a159/" target="_blank">
-            🔗 LinkedIn Profile
-        </a>
+        <a href="mailto:sherykumar25@gmail.com">📧 sherykumar25@gmail.com</a>
+        <a href="tel:+918936958930">📱 +91 8936958930</a>
+        <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
     </div>
 </section>
-    </div>
 
+</div>
+
+<!-- HERO TYPING -->
 <script>
-const text = `Unity Game Developer with 4+ years of experience developing mobile, PC, and VR games. 
-Experienced in building gameplay systems, enemy AI, NavMesh-based movement, and VFX, with a strong focus on performance and smooth player experience.`;
-
+const text = `Unity Game Developer with 4+ years of experience developing mobile, PC, and VR games.`;
 let i = 0;
 
-function type() {
+function typeHero() {
     if (i < text.length) {
-        document.getElementById("typing-text").innerHTML += text.charAt(i);
+        document.getElementById("typing-text").textContent += text.charAt(i);
         i++;
-        setTimeout(type, 25);
+        setTimeout(typeHero, 25);
     }
 }
-type();
+typeHero();
 </script>
 
-</body>
-</html>
-
-
+<!-- PROJECT TYPING -->
 <script>
-/* SLOT VIDEO SEQUENCE */
+document.querySelectorAll(".typing").forEach(el => {
+    const text = el.getAttribute("data-text");
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 15);
+        }
+    }
+
+    type();
+});
+</script>
+
+<!-- SLOT VIDEO LOOP -->
+<script>
 const slotVideos = [
     "images/GalaxyWilds.mp4",
     "images/Serengeti.mp4",
     "images/Mad.mp4"
-    // add more here if needed
 ];
 
 let currentVideo = 0;
@@ -394,12 +258,12 @@ const videoPlayer = document.getElementById("slot-video");
 function playNextVideo() {
     videoPlayer.src = slotVideos[currentVideo];
     videoPlayer.play();
-
     currentVideo = (currentVideo + 1) % slotVideos.length;
 }
 
 videoPlayer.addEventListener("ended", playNextVideo);
-
-// start first video
 playNextVideo();
 </script>
+
+</body>
+</html>
