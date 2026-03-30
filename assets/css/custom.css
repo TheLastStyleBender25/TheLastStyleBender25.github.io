@@ -221,3 +221,63 @@ section {
         width: 90%;
     }
 }
+
+/* ===== PERSONAL PROJECTS ===== */
+
+#personal-projects {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.personal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.personal-card {
+    background: rgba(20,20,40,0.8);
+    border-radius: 12px;
+    width: 260px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.personal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(138,124,255,0.4);
+}
+
+.personal-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.personal-card h3 {
+    margin: 10px 0;
+}
+
+.personal-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* DOWNLOAD BUTTON */
+.btn-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background: #00ffcc;
+    color: black;
+    box-shadow: 0 0 15px #00ffcc;
+}
