@@ -1,104 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/custom.css">
     <title>Shrey Kumar | Unity Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            color: white;
-            background: #0b0b1a;
-        }
-
-        /* HERO */
-        .hero {
-            height: 100vh;
-            background: url("images/bg.jpg") center/cover no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(5,5,15,0.75);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-        }
-
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            border: 1px solid white;
-            text-decoration: none;
-            color: white;
-            display: inline-block;
-        }
-
-        /* NAV */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.7);
-            padding: 10px;
-            text-align: center;
-            z-index: 10;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        /* SECTION */
-        section {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        /* SKILLS */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skill {
-            margin: 20px;
-            padding: 20px;
-            background: #151530;
-            border-radius: 10px;
-            width: 250px;
-        }
-
-        /* CONTACT */
-        .contact a {
-            display: block;
-            margin: 10px;
-            color: #aaa;
-        }
-
-    </style>
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
@@ -123,7 +28,6 @@
     <h2>Skills</h2>
 
     <div class="skills">
-
         <div class="skill">
             <h3>Unity Development</h3>
             <p>2D/3D, URP, PC, Mobile, VR</p>
@@ -148,7 +52,6 @@
             <h3>Multiplayer</h3>
             <p>Netcode, backend basics</p>
         </div>
-
     </div>
 </section>
 
@@ -163,9 +66,6 @@
     </div>
 </section>
 
-</body>
-</html>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const hero = document.querySelector(".hero");
@@ -174,11 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
 
-        let moveX = (x - 0.5) * 20;
-        let moveY = (y - 0.5) * 20;
+        let moveX = (x - 0.5) * 40;
+        let moveY = (y - 0.5) * 40;
 
-        hero.style.backgroundPosition = 
+        hero.style.backgroundPosition =
             `${50 + moveX}% ${50 + moveY}%`;
     });
 });
 </script>
+
+</body>
+</html>
