@@ -368,3 +368,24 @@ section {
     color: white;
     transform: scale(1.05);
 }
+
+/* ===== VIDEO BACKGROUND ===== */
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* DARK LAYER FOR READABILITY */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5,5,15,0.6);
+    z-index: -1;
+}
