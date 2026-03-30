@@ -158,6 +158,42 @@
     </div>
 
 </div>
+
+<!-- 👉 ARISTOCRAT PROJECTS HERE -->
+        <div class="project">
+
+    <div class="project-media">
+        <video id="slot-video" autoplay muted playsinline></video>
+    </div>
+
+    <div class="project-content">
+        <h3>Slot Games Collection</h3>
+
+        <p>
+            Contributed to multiple in-house slot games for BFC, IPS, and NFL, focusing on performance optimization, 
+            payout logic, and core gameplay mechanics.
+        </p>
+
+        <p>
+            Worked extensively on slot math systems, ensuring balanced RTP and engaging gameplay while maintaining 
+            high performance across platforms.
+        </p>
+
+        <ul>
+            <li>Performance optimization for real-time gameplay</li>
+            <li>Slot math & payout system validation</li>
+            <li>Core slot mechanics development</li>
+            <li>Multiple production-ready titles</li>
+        </ul>
+
+        <p><strong>Games:</strong></p>
+        <p>
+            SuperBall Day • Savannah Royalty • Mad Mouse Ultra • Ocean Loot • Serengeti Splendor • Galaxy Wilds
+        </p>
+
+    </div>
+
+</div>
 </section>
 
 <section id="skills">
@@ -196,3 +232,29 @@ type();
 
 </body>
 </html>
+
+
+<script>
+/* SLOT VIDEO SEQUENCE */
+const slotVideos = [
+    "images/GalaxyWilds.mp4",
+    "images/Serengeti.mp4",
+    "images/Mad.mp4"
+    // add more here if needed
+];
+
+let currentVideo = 0;
+const videoPlayer = document.getElementById("slot-video");
+
+function playNextVideo() {
+    videoPlayer.src = slotVideos[currentVideo];
+    videoPlayer.play();
+
+    currentVideo = (currentVideo + 1) % slotVideos.length;
+}
+
+videoPlayer.addEventListener("ended", playNextVideo);
+
+// start first video
+playNextVideo();
+</script>
