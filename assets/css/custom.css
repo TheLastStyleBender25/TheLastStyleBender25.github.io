@@ -363,3 +363,23 @@ section h2 {
         font-size: 2rem;
     }
 }
+
+/* ===== TYPING EFFECT ===== */
+
+.typing {
+    white-space: pre-line;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* blinking cursor */
+.typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
