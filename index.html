@@ -354,5 +354,29 @@ videoPlayer.addEventListener("ended", playNextVideo);
 playNextVideo();
 </script>
 
+    <script>
+const slider = document.getElementById("slider");
+const leftBtn = document.querySelector(".scroll-btn.left");
+const rightBtn = document.querySelector(".scroll-btn.right");
+
+// how much to scroll per click
+const scrollAmount = 300;
+
+leftBtn.addEventListener("click", () => {
+    slider.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth"
+    });
+});
+
+rightBtn.addEventListener("click", () => {
+    slider.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth"
+    });
+});
+</script>
+
 </body>
 </html>
+
