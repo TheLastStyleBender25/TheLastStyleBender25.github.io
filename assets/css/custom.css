@@ -158,10 +158,12 @@ section {
     gap: 30px;
 }
 
-.project-media video {
-    width: 400px;
-    border-radius: 12px;
+.project-media video,
+.project-image {
+    width: 320px;
+    border-radius: 18px;
     box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    display: block;
 }
 
 .project-content {
